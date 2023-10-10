@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.javaweb.code.mapper.SysUserMapper">
+
+    <resultMap id="sysUserResultMap" type="org.javaweb.code.entity.SysUser">
+        <id property="id" column="id" />
+        <result property="username" column="username" />
+        <result property="password" column="password" />
+        <result property="email" column="email" />
+        <result property="userAvatar" column="user_avatar" />
+        <result property="registerTime" column="register_time" />
+        <result property="notes" column="notes" />
+    </resultMap>
+
+    <select id="mybatisStringQuery" parameterType="string" resultMap="sysUserResultMap">
+        SELECT * FROM sys_user WHERE username = '${username}'
+    </select>
+
+    <select id="mybatisStringInjection" parameterType="string" resultMap="sysUserResultMap">
+        SELECT * FROM sys_user WHERE username = #{username}
+    </select>
+
+</mapper>
